@@ -10,7 +10,7 @@
 }
 
 .humburger-line{
-    @apply w-[31px] h-[3px] block bg-white my-2
+    @apply w-[31px] h-[3px] block dark:bg-black bg-white my-2
 }
 
 .active > span:nth-child(1){
@@ -23,3 +23,7 @@
     @apply  -rotate-45;
 }
 
+#dark-toggle:checked ~ label div.toggle-circle{
+    @apply translate-x-3;
+    
+}
